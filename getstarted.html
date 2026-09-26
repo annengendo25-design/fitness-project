@@ -20,29 +20,53 @@
     <hr>
     <h1>Registration Form</h1>
     <form>
-        <h3><legend>Personal Information</legend></h3>
-        <lable for="name">Name</lable>
-        <input type="text" id="name"></input>
 
+    <fieldset>
+
+        <legend>Personal Information</legend>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <br><br>
 
         <label for="email">Email:</label>
-        <input type="email" id="email" placeholder="example@email.com"></input>
+        <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="example@email.com"
+            required>
+
+        <br><br>
 
         <label for="phone">Phone:</label>
-        <input type="tel" id="phone"></input>
-    
-        
+        <input
+            type="tel"
+            id="phone"
+            name="phone"
+            required>
+
+        <br><br>
+
         <label for="country">Country:</label>
-        <select id="country" name="country">
-        <option value="kenya">Kenya</option>
-        <option value="tanzania">Tanzania</option>
-        <option value="uganda">Uganda</option>
-        <option value="rwanda">Rwanda</option>
+
+        <select id="country" name="country" required>
+
+            <option value="">Select your country</option>
+            <option value="kenya">Kenya</option>
+            <option value="tanzania">Tanzania</option>
+            <option value="uganda">Uganda</option>
+            <option value="rwanda">Rwanda</option>
+
         </select>
-      </fieldset>
-    </form>
-     <br>
+
+    </fieldset>
+
+    <br>
+
     <button type="submit">Submit</button>
-    <hr>
+
+</form>
   </body>
 </html>
